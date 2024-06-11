@@ -1,0 +1,102 @@
+/* navbar.css */
+
+.nav-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; 
+    background-color: #3d5a809f;
+    
+  }
+  
+  .nav-inner-top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; /* Ensure space between logo/title and links */
+  }
+  
+  .logo {
+    width: 40px; /* Adjust the size of the logo as needed */
+    height: auto;
+    margin-right: 1rem;
+  }
+  
+  .title {
+    font-size: 2.4rem;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-inner-element {
+    margin: 0 1rem;
+  }
+  
+  .nav-inner-element .linked {
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-inner-element .linked:hover,
+  .nav-inner-element .linked:focus {
+    color: #ee6c4d;
+    text-decoration: underline;
+  }
+  
+  .underline-link {
+    color: #ee6c4d;
+    text-decoration: underline;
+  }
+  
+  .login-inner-top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 4rem);
+    background-color: #f8f9fd;
+    padding-top: 4rem;
+  }
+  
+  .login-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .content-wrapper {
+    background: url('../img/bgg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+  .content-wrapper {
+    background: url('../img/bgg.jpeg');
+    position: absolute;
+    top: 60px; /* Adjust this value according to your navbar height */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    padding: 20px; /* Adjust padding as needed */
+  }
+  .user-dashboard::before {
+    content: "";
+    position: fixed;
+    top: 60px; /* Adjust this value according to your navbar height */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/bgg.jpeg'); /* Adjust the background image path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }

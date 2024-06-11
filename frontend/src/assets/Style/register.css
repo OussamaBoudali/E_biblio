@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: url('../img/bgg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+.container > form {
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    padding: 20px;
+    border-radius: 5px;
+    background: #ffffff6b;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label {
+    width: 100px;
+    margin-right: 10px;
+}
+
+input, select {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 9%;
+}
+
+pre {
+    width: 70%;
+    color: #fff;
+    font-size: larger;
+}
+
+button {
+    background: #05b462 !important;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+p {
+    color: rgb(255, 0, 0);
+}
+
+.text {
+    margin: 2px;
+    padding: 5px;
+    color:rgb(255, 255, 255);
+    background:rgba(9, 9, 9, 0.316);
+}
+
+span{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.text span {
+    color: rgb(176, 229, 95); /* Or any color you prefer */
+
+}
